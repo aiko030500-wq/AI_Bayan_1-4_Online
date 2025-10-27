@@ -10,16 +10,15 @@
 </head>
 <body>
   <div id="app">
-   <section id="shell">
-
+    <section id="shell">
       <header>
         <div class="brand">
           <img src="assets/logo.svg" class="brand-logo" alt="logo" />
           <div><h2>AI Bayan</h2><small>Grades 1–4</small></div>
         </div>
         <div class="userbox">
-          <span id="welcomeName"></span>
-          <button id="btnLogout" title="Logout">⎋</button>
+          <span id="welcomeName">👋 Guest</span>
+          <button id="btnLogout" title="Reload">⎋</button>
         </div>
       </header>
 
@@ -42,13 +41,18 @@
       <main id="view"></main>
 
       <footer>
-        <small>© 2025 AI Bayan — Made for Grades 1–4 • Local progress saved</small>
+        <small>© 2025 AI Bayan — Made for Grades 1–4 • Created by Bayan, Kazakhstan</small>
       </footer>
     </section>
   </div>
 
   <script src="js/data.js"></script>
   <script src="js/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+      navigate("home");
+    });
+  </script>
 </body>
 </html>
 

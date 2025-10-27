@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Bayan — Grades 1–4 Online</title>
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="description" content="AI Bayan — English trainer for Grades 1–4: grammar, phonics, vocabulary, listening, reading, speaking, writing, irregular verbs, clock, dictionary, AI chat and journal.">
+</head>
+<body>
+  <div id="app">
+    <section id="login" class="card">
+      <img src="assets/logo.svg" class="logo" alt="AI Bayan logo"/>
+      <h1>AI Bayan — Grades 1–4 Online</h1>
+      <p class="subtitle">Created by Bayan, Kazakhstan 2025</p>
+      <div class="login-fields">
+        <label>Enter your name / Введите имя</label>
+        <input id="studentName" placeholder="Your name">
+        <label>Access code / Код доступа</label>
+        <input id="accessCode" placeholder="7856">
+        <button id="btnLogin">Enter / Войти</button>
+        <p id="loginError" class="error"></p>
+      </div>
+    </section>
+
+    <section id="shell" class="hidden">
+      <header>
+        <div class="brand">
+          <img src="assets/logo.svg" class="brand-logo" alt="logo" />
+          <div><h2>AI Bayan</h2><small>Grades 1–4</small></div>
+        </div>
+        <div class="userbox">
+          <span id="welcomeName"></span>
+          <button id="btnLogout" title="Logout">⎋</button>
+        </div>
+      </header>
+
+      <nav id="menu">
+        <button data-view="home" class="active">🏠 Home</button>
+        <button data-view="grammar">📘 Grammar</button>
+        <button data-view="phonics">🔤 Phonics</button>
+        <button data-view="vocabulary">🧠 Vocabulary</button>
+        <button data-view="listening">🎧 Listening</button>
+        <button data-view="reading">📖 Reading</button>
+        <button data-view="speaking">🗣️ Speaking</button>
+        <button data-view="writing">✍️ Writing</button>
+        <button data-view="irregular">📑 Irregular Verbs</button>
+        <button data-view="clock">🕒 Clock</button>
+        <button data-view="dictionary">📚 Dictionary</button>
+        <button data-view="chat">🤖 AI Chat Bayan</button>
+        <button data-view="journal">🏅 Journal</button>
+      </nav>
+
+      <main id="view"></main>
+
+      <footer>
+        <small>© 2025 AI Bayan — Made for Grades 1–4 • Local progress saved</small>
+      </footer>
+    </section>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

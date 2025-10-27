@@ -335,4 +335,12 @@ function renderJournal(){
       ${rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td></tr>`).join("")}
     </table>`;
 }
+// --- Auto start for version without login ---
+document.addEventListener("DOMContentLoaded", () => {
+  if (!S.user) {
+    S.user = { name: "Guest" };
+    $("#welcomeName").textContent = "👋 Guest";
+  }
+  navigate("home");
+});
 

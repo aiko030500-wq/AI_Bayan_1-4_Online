@@ -99,3 +99,6 @@ window.AI_BAYAN_DATA = {
     {en:"homework",ru:"домашнее задание"}, {en:"game",ru:"игра"}, {en:"family",ru:"семья"}
   ]
 };
+
+   
+    

@@ -1,4 +1,5 @@
-window.AI_BAYAN_DATA = {
+const AI_BAYAN_DATA = {
+  
   grammar: [
     {grade:1,title:"This is / These are",ex:["This is a cat.","These are apples."],ru:"Это / Эти"},
     {grade:1,title:"a/an & plurals",ex:["a dog → dogs","an apple → apples"],ru:"Артикли a/an и мн. число"},
